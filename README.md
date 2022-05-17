@@ -21,9 +21,12 @@ as you see the diagrame we came with
  2-1 method createAccount will raise and create account request with rondum number it /generate 8 digits 
  2-3 method viewBalance  -- this method will show balance of given account number
  
- 2-4 method  withDrawal  -- this method is used to withdraw requested amount from account by following steps 
+ 2-4 method  withDrawal  -- this method is used to withdraw requested amount from account by following steps
+ 
  2-4-1- we validate the account number 
+ 
  2-4-2- if given account number is doest not exist or wrong we stop the program through throwing exception
+ 
  2-4-3- if given account number is correct then we proceed in this step we have to check the requested Amount if is correct or not with a simple logique as if                 and                
               else
              if    requestedAmount < 0 or requestedAmount > existingBalance
