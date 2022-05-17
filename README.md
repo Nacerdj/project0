@@ -95,6 +95,8 @@ as you see the diagrame we came with
 
 
 we insert on it this values to test our database and if is connected to our application one as customer and other one as employee 
+
+
 insert into user values(3, 'ibrahim', 'java', 'customer');
 insert into user values(4, 'tomtom', 'sql', 'employee');
 nsert into user values (1, 'nacer', 'java', 'customer');
@@ -115,12 +117,17 @@ insert into account values (1111, 10, 1);
 insert into account values(2222, 20, 2);
 
  2 script 
+ 
+ 
     create table transaction(   
     accountNumber integer,
     amount integer,
     operation varchar(40),
      status varchar(40)
 );
+
+
+
     create table pendingTransactions(    
     senderAccountNumber integer,
     receiverAccountNumber integer,
