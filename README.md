@@ -82,8 +82,9 @@ as you see the diagrame we came with
        
        
        
- #SQL Tables  we created 2 script 
-       1 script 
+ #SQL Tables  we created 2 script to let us keep records on our database
+ 
+ 1 script 
        we create this tow tables 
        create table user(
    userId integer primary key,
@@ -109,7 +110,7 @@ we tested it with this values
 insert into account values (1111, 10, 1);
 insert into account values(2222, 20, 2);
 
-    2 script 
+ 2 script 
     create table transaction(   
     accountNumber integer,
     amount integer,
