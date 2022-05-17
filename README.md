@@ -78,8 +78,45 @@ as you see the diagrame we came with
        10 class Utility:
        from this program we get connection to database java.sql.Connection
        
-    
-    
+       #SQL Tables  we created 2 script 
+       1 script 
+       we create this tow tables 
+       create table user(
+   userId integer primary key,
+   userName varchar(50),
+   password varchar(50),
+   role varchar(50)   
+);
+we insert on it this values to test our database and if is connected to our application one as customer and other one as employee 
+insert into user values(3, 'ibrahim', 'java', 'customer');
+insert into user values(4, 'tomtom', 'sql', 'employee');
+nsert into user values (1, 'nacer', 'java', 'customer');
+insert into user values(2, 'john', 'sql', 'employee');
+then 
+
+create table account(
+   accountNumber integer primary key,
+   amount integer,
+   userId integer,
+   status varchar(60),
+   foreign key account(userId) references user(userId)
+);
+we tested it with this values 
+insert into account values (1111, 10, 1);
+insert into account values(2222, 20, 2);
+
+    2 script 
+    create table transaction(   
+    accountNumber integer,
+    amount integer,
+    operation varchar(40),
+     status varchar(40)
+);
+    create table pendingTransactions(    
+    senderAccountNumber integer,
+    receiverAccountNumber integer,
+    amount integer
+);
     
     
     
