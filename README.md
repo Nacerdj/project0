@@ -7,16 +7,18 @@ as you see the diagrame we came with
 
 1-class driver:
 
-              this main class holds the main method for our  program which controles the entire applciation and  execute the application and we take input from user 
-              ( username, password, role) from the scanner where the role will diplay  
+ this main class holds the main method for our  program which controles the entire applciation and  execute the application and we take input from user 
+              ( username, password, role) from the scanner where the role will diplay
+              
  1-1  based on the user role we show respective menu items
+ 
  1-2 based on the menu selected we call respective methods in BankServices class
   
  2-class BankServices:
  
  in this class we write the methods for all requirements needed for the bank services we do have here
  2-1 method validateUser which do verification for username, password and role are correct or not 
- 2-1 method createAccount will raise and create account request
+ 2-1 method createAccount will raise and create account request with rondum number it /generate 8 digits 
  2-3 method viewBalance  -- this method will show balance of given account number
  
  2-4 method  withDrawal  -- this method is used to withdraw requested amount from account by following steps 
@@ -39,17 +41,17 @@ as you see the diagrame we came with
     in this class we communicate with database to perform operations on our SQL database which goes from the Driver class to bankServices class then to BankDao class
     also we have our methods here to porforme defirent taks 
     3-1 method validateUser -- this method  through sql query we check in database whether we have record or not
-    3-2 method getAccountDetails --  this method though sql query to get account information from database
-    3-3 method createNewAccount --   this method though sql query to insert and create account record in database
-    3-4 method isAccountExisted  --  this method though sql query to check whether account is present in database or not
-    3-5 method withDrawOrDeposit --  this method though sql query based on operation we perform whether withdraw or deposit
-    3-6 method postTransfer --       this method though sql query to insert record into pending transactions table
-    3-7 method acceptTransfer --     this method though sql query will read records from pending transaction table and completes transaction
-    3-8 method displayTransactions -- this method though sql query will read transaction table and display all transactions information
+    3-2 method getAccountDetails --  this method through sql query to get account information from database
+    3-3 method createNewAccount --   this method through sql query to insert and create account record in database
+    3-4 method isAccountExisted  --  this method through sql query to check whether account is present in database or not
+    3-5 method withDrawOrDeposit --  this method through sql query based on operation we perform whether withdraw or deposit
+    3-6 method postTransfer --       this method through sql query to insert record into pending transactions table
+    3-7 method acceptTransfer --     this method through sql query will read records from pending transaction table and completes transaction
+    3-8 method displayTransactions -- this method through sql query will read transaction table and display all transactions information
     
     4 class Account:
     hold all properties of Account class for storing records as objects.
-    where our account has Account(int accountNumber, int amount, int userId, String status)
+    where our account has (int accountNumber, int amount, int userId, String status)
     
     5 class AccountDoesNotExist:
     we use this class to through exception on RuntimeException which occurs when we enter invalid accoutn number we print out text                                          ("Sorry !! No Account existed with given account number")
