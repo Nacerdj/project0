@@ -57,10 +57,13 @@ as you see the diagrame we came with
     where our account has (int accountNumber, int amount, int userId, String status)
     
     5 class AccountDoesNotExist:
-    we use this class to through exception on RuntimeException which occurs when we enter invalid accoutn number we print out text                                          ("Sorry !! No Account existed with given account number")
+    we use this class to through exception on RuntimeException which occurs when we enter invalid accoutn number we print out text  
+    
+    ("Sorry !! No Account existed with given account number")
     
     6  class Constants:
-       we difinded our constants(EMPLOYEE,CUSTOMER,SUCCESS,FAIL,WITHDRAW, DEPOSIT,PENDINGTOAPPROVE,APPROVED,REJECTED) we holded all our constant in this enum class        instead of  repiting coding in all places
+       we difinded our constants(EMPLOYEE,CUSTOMER,SUCCESS,FAIL,WITHDRAW, DEPOSIT,PENDINGTOAPPROVE,APPROVED,REJECTED) 
+       we holded all our constant in this enum class  instead of  repiting coding in all places
        
       7 class Transaction:
          creates transactions and send it to pending 
