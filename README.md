@@ -4,12 +4,13 @@ my first step was to designe a plan what we need for our application or app to i
 ![Blank diagram](https://user-images.githubusercontent.com/89362530/168853550-9dea9939-5bcf-4256-8897-78b450a23e17.svg)
 
 as you see the diagrame we came with
+
 1-class driver:
 
-this main class holds the main method for our  program which controles the entire applciation and  execute the application and we take input from user 
-( username, password, role) from the scanner where the role will diplay  
- 1-  based on the user role we show respective menu items
- 2- based on the menu selected we call respective methods in BankServices class
+              this main class holds the main method for our  program which controles the entire applciation and  execute the application and we take input from user 
+              ( username, password, role) from the scanner where the role will diplay  
+ 1-1  based on the user role we show respective menu items
+ 1-2 based on the menu selected we call respective methods in BankServices class
   
  2-class BankServices:
  
@@ -18,9 +19,9 @@ this main class holds the main method for our  program which controles the entir
  2-1 method createAccount will raise and create account request
  2-3 method viewBalance  -- this method will show balance of given account number
  2-4 method  withDrawal  -- this method is used to withdraw requested amount from account by following steps 
-       1- we validate the account number 
-       2- if given account number is doest not exist or wrong we stop the program through throwing exception
-       3- if given account number is correct then we proceed in this step we have to check the requested Amount if is correct or not with a simple logique as if and                 else
+      2-4-1- we validate the account number 
+       2-4-2- if given account number is doest not exist or wrong we stop the program through throwing exception
+       2-4-3- if given account number is correct then we proceed in this step we have to check the requested Amount if is correct or not with a simple logique as if and                 else
              if    requestedAmount < 0 or requestedAmount > existingBalance
              else  then also we reject
              else   otherwise we proceed
