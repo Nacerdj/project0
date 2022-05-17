@@ -101,6 +101,9 @@ insert into user values(3, 'ibrahim', 'java', 'customer');
 insert into user values(4, 'tomtom', 'sql', 'employee');
 nsert into user values (1, 'nacer', 'java', 'customer');
 insert into user values(2, 'john', 'sql', 'employee');
+
+
+
 then 
 
 create table account(
@@ -113,6 +116,8 @@ create table account(
 
 
 we tested it with this values 
+
+
 insert into account values (1111, 10, 1);
 insert into account values(2222, 20, 2);
 
