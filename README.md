@@ -92,6 +92,8 @@ as you see the diagrame we came with
    password varchar(50),
    role varchar(50)   
 );
+
+
 we insert on it this values to test our database and if is connected to our application one as customer and other one as employee 
 insert into user values(3, 'ibrahim', 'java', 'customer');
 insert into user values(4, 'tomtom', 'sql', 'employee');
@@ -106,6 +108,8 @@ create table account(
    status varchar(60),
    foreign key account(userId) references user(userId)
 );
+
+
 we tested it with this values 
 insert into account values (1111, 10, 1);
 insert into account values(2222, 20, 2);
