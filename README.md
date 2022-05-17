@@ -78,7 +78,11 @@ as you see the diagrame we came with
        10 class Utility:
        from this program we get connection to database java.sql.Connection
        
-       #SQL Tables  we created 2 script 
+       
+       
+       
+       
+ #SQL Tables  we created 2 script 
        1 script 
        we create this tow tables 
        create table user(
